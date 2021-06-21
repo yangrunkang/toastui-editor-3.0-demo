@@ -15,7 +15,8 @@ const editor = new Editor({
     previewStyle: 'vertical',
     height: '500px',
     initialValue: allPluginsContent,
-    plugins: [[chart, chartOptions], [codeSyntaxHighlight, { highlighter: Prism }], colorSyntax, tableMergedCell]
+    plugins: [[chart, chartOptions], [codeSyntaxHighlight, { highlighter: Prism }], colorSyntax, tableMergedCell],
+    language: 'zh-CN'
 });
 
 // 删除默认监听事件
