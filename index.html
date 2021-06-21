@@ -21,7 +21,15 @@
 <body>
     <h2>集成toastui-editor示例</h2>
     <h4><a href="https://www.upupor.com/team">www.upupor.com 开发者提供技术支持</a></h5>
+        <div style="margin-top:10px; margin-bottom: 10px;">
+            <button onclick="getValue('h')">获取html</button>
+            <button onclick="getValue('m')">获取markdown</button>
+            <button onclick="setValue('h')">设置html</button>
+            <button onclick="setValue('m')">设置markdown</button>
+            <button onclick="reset()">重置</button>
+        </div>
     <div id="editor"></div>
+
 </body>
     <script src="plugin/md-plugins.js"></script>
     <script type="text/javascript" src="plugin/toastui-editor-all.js"></script>
