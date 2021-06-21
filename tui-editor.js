@@ -60,3 +60,13 @@ function reset() {
   editor.reset();
 }
 
+const viewer = toastui.Editor.factory({
+  el: document.querySelector('#viewer'),
+  viewer: true,
+  initialValue: allPluginsContent,
+  plugins: [[chart, chartOptions], [codeSyntaxHighlight, { highlighter: Prism }], colorSyntax, tableMergedCell],
+});
+
+function viewerBtn(){
+  viewer.setMarkdown(editor.getMarkdown());
+}
