@@ -16,7 +16,16 @@ const editor = new Editor({
     height: '500px',
     initialValue: allPluginsContent,
     plugins: [[chart, chartOptions], [codeSyntaxHighlight, { highlighter: Prism }], colorSyntax, tableMergedCell],
-    language: 'zh-CN'
+    language: 'zh-CN',
+    events: {
+      load: function(){
+        console.log('编辑器加载完成');
+      },
+      change: function(){
+        console.log('编辑器内容变更');
+      }
+    },
+    hideModeSwitch: true,
 });
 
 // 删除默认监听事件
