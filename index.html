@@ -16,18 +16,21 @@
     <link rel="stylesheet" href="plugin/toastui-editor-plugin-color-syntax.min.css">
     <!-- Merged Table -->
     <link rel="stylesheet" href="plugin/toastui-editor-plugin-table-merged-cell.min.css">
+    <link rel="stylesheet" href="plugin/bootstrap-4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin/bootstrap-4.6.0/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="plugin/bootstrap-4.6.0/css/bootstrap-reboot.min.css">
     <title>tui.editor测试</title>
 </head>
 <body>
     <h2>集成toastui-editor示例</h2>
     <h4><a href="https://www.upupor.com/team">www.upupor.com 开发者提供技术支持</a></h5>
     <div style="margin-top:10px; margin-bottom: 10px;">
-        <button onclick="getValue('h')">获取html</button>
-        <button onclick="getValue('m')">获取markdown</button>
-        <button onclick="setValue('h')">设置html</button>
-        <button onclick="setValue('m')">设置markdown</button>
-        <button onclick="reset()">重置</button>
-        <button onclick="viewerBtn()">预览</button>
+        <button class="btn btn-info btn-sm" onclick="getValue('h')">获取html</button>
+        <button class="btn btn-info btn-sm" onclick="getValue('m')">获取markdown</button>
+        <button class="btn btn-info btn-sm" onclick="setValue('h')">设置html</button>
+        <button class="btn btn-info btn-sm" onclick="setValue('m')">设置markdown</button>
+        <button class="btn btn-info btn-sm" onclick="reset()">重置</button>
+        <button class="btn btn-info btn-sm" onclick="viewerBtn()">预览</button>
     </div>
     <div id="editor"></div>
 
@@ -46,5 +49,7 @@
     <script src="plugin/toastui-editor-plugin-color-syntax.min.js"></script>
     <script src="plugin/toastui-editor-plugin-table-merged-cell.min.js"></script>
     <script src="plugin/zh-cn.js"></script>
+    <script src="plugin/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+    <script src="plugin/bootstrap-4.6.0/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="tui-editor.js" ></script>
 </html>
